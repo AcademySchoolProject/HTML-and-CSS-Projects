@@ -1,0 +1,16 @@
+
+/* CSS comment! */
+p {
+	color: cyan;
+	background: black;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: right;
+}
+
+ /* This is how to add CSS text shadow property
+	text-shadow: horizontal-shadow vertical-shadow blur-radius color|none|initial|inherit; */
+	
+h1 {
+	text-shadow: 2px 2px 8px blue;
+}

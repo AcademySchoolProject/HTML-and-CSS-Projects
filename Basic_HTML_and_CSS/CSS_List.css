@@ -1,0 +1,11 @@
+/* Change to roman numberals */
+
+ol {
+	list-style-type: upper-roman;
+}
+
+/* square bullet points from circle */
+
+ul {
+	list-style-type: square;
+}

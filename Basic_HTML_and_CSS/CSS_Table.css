@@ -1,0 +1,27 @@
+
+/* Add silver border at 1 px thick */
+table {
+	border: 1px solid silver;
+}
+
+/* Add "hover" Effect -make it so background color of 
+cells to yellow and font to black when hovered over*/
+
+td:hover {
+	background-color: yellow;
+	color: black;
+}
+
+/* Make top row black background font color cornsilk*/
+
+tr, th {
+	background-color: black;
+	color: cornsilk;
+}
+
+/* Remaining rows dark green background white font */
+
+tr, td {
+	background-color: darkgreen;
+	color: white;
+}
