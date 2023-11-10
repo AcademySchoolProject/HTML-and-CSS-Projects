@@ -19,7 +19,7 @@
     margin: 0% auto;
     position: relative;
     padding: 15px 4%;
-    border: 1px solid #9D9FA2;
+    border: 2px solid rgb(2, 19, 43);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     /*background-color: #052136;*/
@@ -31,8 +31,8 @@
 }
 
 .menu li:hover {
-    color: #f00;
-    background-color: rgba(100, 65, 0, 0.3);
+    color: rgb(8, 34, 151);
+    background-color: rgba(24, 184, 212, 0.3);
 }
 
 /*------------------------------------------
@@ -46,21 +46,34 @@
     border-radius: 8px;
     padding: 1px;
     border: 1px solid #021a40;
-    background-color: #ff0;
+    background-color: rgb(0, 247, 255);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 .photo-container {
     text-align: center;
     margin: 15px auto;
-    width: 300px;
-    height: 169px;
+    width: 339px;
+    height: 274px;
 }
 
 .photo-container img {
     max-width: 100%;
-    width: 300px;
-    height: 169px;
+    width: 339px;
+    height: 274px;
+}
+
+.photo-container2 {
+    text-align: center;
+    margin: 15px auto;
+    width: 302px;
+    height: 403px;
+}
+
+.photo-container2 img {
+    max-width: 100%;
+    width: 302px;
+    height: 403px;
 }
 
 .photo-overlay {
