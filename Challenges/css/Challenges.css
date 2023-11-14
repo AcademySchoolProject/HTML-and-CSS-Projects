@@ -1,0 +1,214 @@
+/*--------------------------------
+    CHALLENGE IMAGE
+--------------------------------*/
+.photo1 {
+/*---- CHALLENGE IMAGE CENTER ----*/
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 20%;
+/*---- CHALLENGE IMAGE FILTER ----*/
+  filter: drop-shadow(8px 8px 10px black);
+/*---- CHALLENGE IMAGE ROUNDED EDGE ----*/
+  border-radius: 15px;
+}
+
+.photo2 {
+/*---- CHALLENGE IMAGE CENTER ----*/
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 130%;
+/*---- CHALLENGE IMAGE FILTER ----*/
+    filter: drop-shadow(8px 8px 10px black);
+/*---- CHALLENGE IMAGE ROUNDED EDGE ----*/
+    border-radius: 15px;
+}
+
+/*--------------------------------
+    CHALLENGE FOOTER
+--------------------------------*/
+footer {
+    padding-top: 20px;
+/*---- CHALLENGE FOOTER CENTER ----*/
+    text-align: center;
+/*---- CHALLENGE FOOTER BOLD ----*/
+    font-weight: 900;
+}
+
+/*--------------------------------
+    CHALLENGE TABLE
+--------------------------------*/
+table {
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+/*---- CHALLENGE TABLE BORDER ----*/
+    border: 1px solid black;
+/*---- CHALLENGE TABLE PADDING ----*/
+    padding: 10px;
+}
+
+th {
+/*---- CHALLENGE TABLE BORDER ----*/
+    border: 2px solid black;
+/*---- CHALLENGE TABLE PADDING ----*/
+    padding: 10px;
+/*---- CHALLENGE TH BACKGROUND COLOR ----*/
+    background-color: #23a875;
+}
+
+/*--------------------------------
+    CHALLENGE TEXT OVER IMAGE
+--------------------------------*/
+.photo-containerover {
+    padding-top: 10px;
+    text-align: center;
+    color: #0ff4fc;
+    font-weight: 900;
+}
+
+.photo-textover {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------------------------
+    CHALLENGE NAV BAR
+--------------------------------*/
+.navbar {
+    overflow: hidden;
+/*---- CHALLENGE NAV BACKGROUND COLOR ----*/
+    background-color: #93beb9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+/*---- CHALLENGE NAV FONT COLOR ----*/
+    color: #0c0752;
+    font-weight: 900;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*---- CHALLENGE NAV HOVER ----*/
+.navbar a:hover{
+    background-color: #0f724c;
+    color: white;
+}
+
+/*--------------------------------
+    CHALLENGE COLUMNS
+--------------------------------*/
+.column {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #0f724c;
+    color: #0c0752;
+}
+
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/*--------------------------------
+    CHALLENGE P ELEMENT WITH HOVER
+--------------------------------*/
+p:hover {
+    color: #0f724c;
+}
+
+/*--------------------------------
+    CHALLENGE IMAGE OVERLAY FADE
+--------------------------------*/
+.photo3 {
+    position: relative;
+    line-height: 0px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    }
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 200px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .1s;
+    border-radius: 10px;
+}
+
+.overtext {
+    color: #fff;
+    margin-top: 5%;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+/*--------------------------------
+    CHALLENGE VIDEO TEXT OVER
+--------------------------------*/
+.video-container {
+    padding-top: 10px;
+
+}
+
+.video-overlay {
+    position: relative;
+    text-align: center;
+    color: #0ff4fc;
+    font-weight: 900;
+}
+
+.video-textover {
+    position: absolute;
+    bottom: 50px;
+    right: 25%;
+    transform: translate(-50%, -50%);
+}
