@@ -3,6 +3,7 @@
 	<head>
 		<title>Crochet Cuties</title>
 		<meta charset="utf-8">
+		<script src="./JS/one_page_website.js" defer></script>
 		<link rel="stylesheet" href="./CSS/css_style.css">
 		<link rel="stylesheet" href="./CSS/animations.css">
 	</head>
@@ -42,7 +43,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_1.png" alt="Crochet Ghost">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(1)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Halloween Crochet Ghost Friend.</p>
 							</div>
@@ -54,7 +55,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_2.png" alt="Crochet Frog">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(2)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Long Arm and Leggy Crochet Frog Friend.</p>
 							</div>
@@ -66,7 +67,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_3.png" alt="Crochet Bat">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(3)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Large Crochet Bat.</p>
 							</div>
@@ -78,7 +79,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_4.png" alt="Crochet Pumpkin with Smile">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick=" openModal();currentSlide(4)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Cute Pumpkin Crochet Friend.</p>
 							</div>
@@ -90,7 +91,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_5.png" alt="Crochet Pumpkin">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(5)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Regular Pumpkin Crochet.</p>
 							</div>
@@ -102,7 +103,7 @@
 					<div class="photo-container">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_6.png" alt="Crochet Whale Black 1">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(6)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Black Whale Crochet Friend 1.</p>
 							</div>
@@ -114,7 +115,7 @@
 					<div class="photo-container2">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_7.png" alt="Crochet Whale Black 2">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(7)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Black Whale Crochet Friend 2.</p>
 							</div>
@@ -126,7 +127,7 @@
 					<div class="photo-container2">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_8.png" alt="Crochet Frog Head">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(8)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Little Frog Head Crochet Friend.</p>
 							</div>
@@ -138,7 +139,7 @@
 					<div class="photo-container2">
 						<div class="photo">
 							<img src="./images/thumb/thumbnail_9.png" alt="Crochet Whale Blue Tail">
-							<div class="photo-overlay">
+							<div class="photo-overlay" onclick="openModal();currentSlide(9)">
 								<h3>Click to Enlarge</h3>
 								<p>Our Soft Blue Whale Crochet Friend.</p>
 							</div>
@@ -158,6 +159,105 @@
 			</div>
 		</section>
 		<!-- END GALLERY -->
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 9</div>
+					<img src="./Images/Thumb/thumbnail_1wide.png" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 9</div>
+					<img src="./Images/Thumb/thumbnail_2wide.png" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 9</div>
+					<img src="./Images/Thumb/thumbnail_3wide.png" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">4 / 9</div>
+					<img src="./Images/Thumb/thumbnail_4wide.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 9</div>
+					<img src="./Images/Thumb/thumbnail_5wide.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 9</div>
+					<img src="./Images/Thumb/thumbnail_6wide.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">7 / 9</div>
+					<img src="./Images/Thumb/thumbnail_7wide.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 9</div>
+					<img src="./Images/Thumb/thumbnail_8wide.png" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="./Images/Thumb/thumbnail_9wide.png" style="width:100%">
+				</div>
+			
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="Crochet Ghost">
+				</div>
+			
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Snow">
+				</div>
+			
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Mountains">
+				</div>
+			
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_4.png" onclick="currentSlide(4)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_5.png" onclick="currentSlide(4)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_6.png" onclick="currentSlide(4)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_7.png" onclick="currentSlide(4)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_8.png" onclick="currentSlide(4)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" style="width:100%" src="./Images/Thumb/thumbnail_9.png" onclick="currentSlide(4)" alt="Lights">
+				</div>
+			</div>
+		</div>
+		<!-- MODAL/LIGHTBOX END-->
 		
 		<!-- RSVP -->
 		<section id="contact">
