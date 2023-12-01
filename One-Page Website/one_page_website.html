@@ -4,6 +4,7 @@
 		<title>Crochet Cuties</title>
 		<meta charset="utf-8">
 		<script src="./JS/one_page_website.js" defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="./CSS/css_style.css">
 		<link rel="stylesheet" href="./CSS/animations.css">
 	</head>
@@ -16,7 +17,7 @@
 				<ul class="menu">
 					<a href="#home"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#requests"><li>REQUESTS</li></a>
+					<a href="#contact"><li>REQUESTS</li></a>
 				</ul>
 			</div>
 		</div>
@@ -258,7 +259,47 @@
 			</div>
 		</div>
 		<!-- MODAL/LIGHTBOX END-->
+
+		<!--Image Zoomies-->
+			<div class="zoomfeature">
+				<img class="zoomfeature" src="./Images/heartscrochet.jpg" alt="">
+			</div>
 		
+		<div id="slideshow">
+			<div>
+				<img src="./Images/Thumb/thumbnail_2.png">
+			</div>
+			<div>
+				<img src="./Images/Thumb/thumbnail_1.png">
+			</div>
+			<div>
+				<img src="./Images/Thumb/thumbnail_3.png">
+			</div>
+		</div>
+
+
+		<!--Sticky contact button-->
+		<button class="button" onclick="openForm()">Contact</button>
+		<!--Sticky contact form pop up-->
+		<div class="form-popup" id="myForm">
+			<form action="" class="form-container">
+			  <p id="request">Request a Custom Crochet Friend!</p>
+		  
+			  <label for="name"><b>Name</b></label>
+			  <hr>
+			  <input type="text" placeholder="Name" name="name" required>
+			  <label for="email"><b>Email</b></label>
+			  <input type="text" placeholder="Enter Email" name="email" required>
+			  <label for="phone_number"><b>Phone Number</b></label>
+			  <input type="text" placeholder="Phone Number" name="phone_number" required>
+			  <label for="request"><b>Request</b></label>
+			  <input type="text" placeholder="Request" name="request" required>
+		  
+			  <button type="submit" class="btn">Contact now!</button>
+			  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		  </div>
+
 		<!-- RSVP -->
 		<section id="contact">
 			<div class="container">
@@ -297,5 +338,17 @@
 			www.crochet-cuties.com &nbsp;|&nbsp;| &copy; 2023
 		</div>
 		<!-- END FOOTER -->
+		<script>
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() { 
+			$('#slideshow > div:first')
+			.fadeOut(1000)
+			.next()
+			.fadeIn(1000)
+			.end()
+			.appendTo('#slideshow');
+		}, 3000);
+		</script>
 	</body>
 </html>

@@ -38,3 +38,18 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  document.body.classList.add('fade-out');
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+  });
+
+  
+
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
